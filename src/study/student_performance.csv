@@ -1,0 +1,101 @@
+record_id,school_id,school_name,school_city,student_id,student_name,gender,age,course_id,course_name,teacher_id,teacher_name,study_hours_week,absences,final_grade
+1,SCH03,Miller High School,Johnsonland,S035,Caitlin Mcdonald,F,14,CRS005,English,T006,Curtis James,17.4,8,76
+2,SCH03,Miller High School,Johnsonland,S034,Candace Cruz,M,18,CRS008,Art,T006,Curtis James,11.3,0,72
+3,SCH04,Robinson College,New Jamesside,S001,Michael Cooper,F,18,CRS001,Mathematics,T003,Katherine Moore,19.4,12,67
+4,SCH02,Taylor High School,Lake Joyside,S039,Karen Mack,F,16,CRS003,Chemistry,T002,Joshua Booth,10.2,3,54
+5,SCH02,Taylor High School,Lake Joyside,S021,Linda Morales,M,16,CRS006,History,T001,Robert Cole,17.4,0,79
+6,SCH04,Robinson College,New Jamesside,S032,Michelle Hernandez,F,15,CRS003,Chemistry,T002,Joshua Booth,8.4,12,41
+7,SCH01,Fowler College,Lake Joshuabury,S002,Joseph Williams,F,14,CRS002,Physics,T002,Joshua Booth,15.9,4,51
+8,SCH01,Fowler College,Lake Joshuabury,S008,Donna Mejia,F,16,CRS002,Physics,T002,Joshua Booth,19.9,8,81
+9,SCH02,Taylor High School,Lake Joyside,S024,Jason Porter,M,14,CRS002,Physics,T002,Joshua Booth,13.6,7,63
+10,SCH04,Robinson College,New Jamesside,S020,Brian Underwood,F,15,CRS006,History,T001,Robert Cole,19.4,9,75
+11,SCH03,Miller High School,Johnsonland,S016,John Ford,F,17,CRS003,Chemistry,T002,Joshua Booth,15.0,0,73
+12,SCH04,Robinson College,New Jamesside,S004,Sandra Miller,F,18,CRS006,History,T001,Robert Cole,12.1,8,52
+13,SCH03,Miller High School,Johnsonland,S016,John Ford,F,17,CRS004,Biology,T002,Joshua Booth,18.5,8,80
+14,SCH04,Robinson College,New Jamesside,S037,Sherri Frazier,M,15,CRS003,Chemistry,T002,Joshua Booth,2.5,2,60
+15,SCH04,Robinson College,New Jamesside,S006,Nicole Ward,F,15,CRS001,Mathematics,T003,Katherine Moore,2.3,1,41
+16,SCH04,Robinson College,New Jamesside,S006,Nicole Ward,F,15,CRS004,Biology,T002,Joshua Booth,3.3,9,29
+17,SCH04,Robinson College,New Jamesside,S032,Michelle Hernandez,F,15,CRS001,Mathematics,T003,Katherine Moore,5.7,9,42
+18,SCH03,Miller High School,Johnsonland,S005,Kelly Fuller,F,17,CRS004,Biology,T002,Joshua Booth,13.5,9,57
+19,SCH03,Miller High School,Johnsonland,S035,Caitlin Mcdonald,F,14,CRS001,Mathematics,T003,Katherine Moore,10.9,4,62
+20,SCH01,Fowler College,Lake Joshuabury,S009,Tracie Wyatt,F,17,CRS001,Mathematics,T003,Katherine Moore,5.5,6,55
+21,SCH01,Fowler College,Lake Joshuabury,S009,Tracie Wyatt,F,17,CRS002,Physics,T002,Joshua Booth,3.5,10,31
+22,SCH01,Fowler College,Lake Joshuabury,S031,Trevor Campos,F,14,CRS004,Biology,T002,Joshua Booth,15.3,1,79
+23,SCH03,Miller High School,Johnsonland,S036,John Tran,M,14,CRS002,Physics,T002,Joshua Booth,1.2,9,56
+24,SCH01,Fowler College,Lake Joshuabury,S011,Shawn Flowers,F,17,CRS005,English,T006,Curtis James,2.4,3,41
+25,SCH02,Taylor High School,Lake Joyside,S017,Joseph Schaefer,M,16,CRS008,Art,T006,Curtis James,10.6,2,75
+26,SCH03,Miller High School,Johnsonland,S034,Candace Cruz,M,18,CRS007,Computer Science,T006,Curtis James,17.7,5,65
+27,SCH04,Robinson College,New Jamesside,S028,Julie Patterson,M,18,CRS001,Mathematics,T003,Katherine Moore,6.4,7,50
+28,SCH02,Taylor High School,Lake Joyside,S014,Frances Jones,F,14,CRS005,English,T006,Curtis James,12.6,12,39
+29,SCH02,Taylor High School,Lake Joyside,S040,Matthew Carter,F,16,CRS008,Art,T006,Curtis James,13.4,0,64
+30,SCH02,Taylor High School,Lake Joyside,S013,Elizabeth Miles,M,18,CRS007,Computer Science,T006,Curtis James,18.7,1,71
+31,SCH04,Robinson College,New Jamesside,S020,Brian Underwood,F,15,CRS008,Art,T006,Curtis James,18.8,2,77
+32,SCH02,Taylor High School,Lake Joyside,S026,Douglas Taylor,M,17,CRS005,English,T006,Curtis James,15.1,2,87
+33,SCH02,Taylor High School,Lake Joyside,S024,Jason Porter,M,14,CRS008,Art,T006,Curtis James,6.2,9,42
+34,SCH02,Taylor High School,Lake Joyside,S029,Brandy Cox,M,16,CRS001,Mathematics,T003,Katherine Moore,14.1,4,72
+35,SCH03,Miller High School,Johnsonland,S034,Candace Cruz,M,18,CRS001,Mathematics,T003,Katherine Moore,10.6,4,70
+36,SCH02,Taylor High School,Lake Joyside,S029,Brandy Cox,M,16,CRS008,Art,T006,Curtis James,2.8,6,28
+37,SCH01,Fowler College,Lake Joshuabury,S008,Donna Mejia,F,16,CRS006,History,T001,Robert Cole,16.8,0,91
+38,SCH03,Miller High School,Johnsonland,S016,John Ford,F,17,CRS007,Computer Science,T006,Curtis James,13.1,4,63
+39,SCH02,Taylor High School,Lake Joyside,S015,Cynthia Ferguson,M,14,CRS004,Biology,T002,Joshua Booth,4.1,7,31
+40,SCH03,Miller High School,Johnsonland,S005,Kelly Fuller,F,17,CRS001,Mathematics,T003,Katherine Moore,1.2,1,38
+41,SCH02,Taylor High School,Lake Joyside,S022,Carl Gentry,M,14,CRS006,History,T001,Robert Cole,19.0,11,74
+42,SCH01,Fowler College,Lake Joshuabury,S002,Joseph Williams,F,14,CRS003,Chemistry,T002,Joshua Booth,16.9,9,58
+43,SCH02,Taylor High School,Lake Joyside,S015,Cynthia Ferguson,M,14,CRS006,History,T001,Robert Cole,11.5,6,61
+44,SCH02,Taylor High School,Lake Joyside,S015,Cynthia Ferguson,M,14,CRS001,Mathematics,T003,Katherine Moore,18.1,12,67
+45,SCH04,Robinson College,New Jamesside,S001,Michael Cooper,F,18,CRS004,Biology,T002,Joshua Booth,19.5,0,87
+46,SCH03,Miller High School,Johnsonland,S005,Kelly Fuller,F,17,CRS005,English,T006,Curtis James,5.7,1,48
+47,SCH04,Robinson College,New Jamesside,S004,Sandra Miller,F,18,CRS007,Computer Science,T006,Curtis James,7.7,8,51
+48,SCH03,Miller High School,Johnsonland,S035,Caitlin Mcdonald,F,14,CRS006,History,T001,Robert Cole,12.8,2,60
+49,SCH03,Miller High School,Johnsonland,S005,Kelly Fuller,F,17,CRS003,Chemistry,T002,Joshua Booth,18.6,3,91
+50,SCH01,Fowler College,Lake Joshuabury,S003,Stephen Martinez,F,15,CRS001,Mathematics,T003,Katherine Moore,16.4,6,51
+51,SCH02,Taylor High School,Lake Joyside,S022,Carl Gentry,M,14,CRS002,Physics,T002,Joshua Booth,1.5,11,39
+52,SCH03,Miller High School,Johnsonland,S035,Caitlin Mcdonald,F,14,CRS003,Chemistry,T002,Joshua Booth,8.8,10,38
+53,SCH04,Robinson College,New Jamesside,S033,Ernest Becker,F,17,CRS008,Art,T006,Curtis James,17.4,12,60
+54,SCH03,Miller High School,Johnsonland,S016,John Ford,F,17,CRS002,Physics,T002,Joshua Booth,14.3,6,67
+55,SCH02,Taylor High School,Lake Joyside,S018,Hailey Robinson,M,16,CRS007,Computer Science,T006,Curtis James,17.6,7,71
+56,SCH02,Taylor High School,Lake Joyside,S038,Danny Dyer,F,16,CRS008,Art,T006,Curtis James,9.7,4,70
+57,SCH02,Taylor High School,Lake Joyside,S014,Frances Jones,F,14,CRS006,History,T001,Robert Cole,16.6,3,74
+58,SCH01,Fowler College,Lake Joshuabury,S009,Tracie Wyatt,F,17,CRS004,Biology,T002,Joshua Booth,8.6,4,65
+59,SCH01,Fowler College,Lake Joshuabury,S031,Trevor Campos,F,14,CRS003,Chemistry,T002,Joshua Booth,17.4,12,58
+60,SCH03,Miller High School,Johnsonland,S016,John Ford,F,17,CRS005,English,T006,Curtis James,8.6,8,58
+61,SCH04,Robinson College,New Jamesside,S033,Ernest Becker,F,17,CRS006,History,T001,Robert Cole,7.3,0,72
+62,SCH02,Taylor High School,Lake Joyside,S027,Julie Ryan,M,15,CRS001,Mathematics,T003,Katherine Moore,4.4,4,58
+63,SCH02,Taylor High School,Lake Joyside,S013,Elizabeth Miles,M,18,CRS002,Physics,T002,Joshua Booth,1.7,9,18
+64,SCH02,Taylor High School,Lake Joyside,S007,James Jones,M,16,CRS001,Mathematics,T003,Katherine Moore,7.0,9,47
+65,SCH02,Taylor High School,Lake Joyside,S007,James Jones,M,16,CRS002,Physics,T002,Joshua Booth,19.7,1,74
+66,SCH02,Taylor High School,Lake Joyside,S022,Carl Gentry,M,14,CRS001,Mathematics,T003,Katherine Moore,5.8,11,43
+67,SCH02,Taylor High School,Lake Joyside,S014,Frances Jones,F,14,CRS007,Computer Science,T006,Curtis James,9.3,8,57
+68,SCH03,Miller High School,Johnsonland,S012,Francisco Kelly,M,14,CRS003,Chemistry,T002,Joshua Booth,14.7,11,51
+69,SCH04,Robinson College,New Jamesside,S037,Sherri Frazier,M,15,CRS005,English,T006,Curtis James,15.0,3,66
+70,SCH02,Taylor High School,Lake Joyside,S014,Frances Jones,F,14,CRS002,Physics,T002,Joshua Booth,13.6,5,65
+71,SCH02,Taylor High School,Lake Joyside,S015,Cynthia Ferguson,M,14,CRS008,Art,T006,Curtis James,12.8,10,61
+72,SCH04,Robinson College,New Jamesside,S028,Julie Patterson,M,18,CRS006,History,T001,Robert Cole,6.7,4,38
+73,SCH02,Taylor High School,Lake Joyside,S024,Jason Porter,M,14,CRS003,Chemistry,T002,Joshua Booth,13.7,5,57
+74,SCH01,Fowler College,Lake Joshuabury,S002,Joseph Williams,F,14,CRS006,History,T001,Robert Cole,3.4,6,42
+75,SCH02,Taylor High School,Lake Joyside,S022,Carl Gentry,M,14,CRS005,English,T006,Curtis James,13.6,6,53
+76,SCH02,Taylor High School,Lake Joyside,S021,Linda Morales,M,16,CRS008,Art,T006,Curtis James,12.7,4,46
+77,SCH02,Taylor High School,Lake Joyside,S040,Matthew Carter,F,16,CRS004,Biology,T002,Joshua Booth,8.7,0,57
+78,SCH04,Robinson College,New Jamesside,S004,Sandra Miller,F,18,CRS002,Physics,T002,Joshua Booth,15.9,9,67
+79,SCH01,Fowler College,Lake Joshuabury,S002,Joseph Williams,F,14,CRS008,Art,T006,Curtis James,13.4,7,48
+80,SCH02,Taylor High School,Lake Joyside,S013,Elizabeth Miles,M,18,CRS008,Art,T006,Curtis James,10.7,12,50
+81,SCH01,Fowler College,Lake Joshuabury,S031,Trevor Campos,F,14,CRS008,Art,T006,Curtis James,18.1,12,61
+82,SCH01,Fowler College,Lake Joshuabury,S011,Shawn Flowers,F,17,CRS007,Computer Science,T006,Curtis James,6.4,10,27
+83,SCH04,Robinson College,New Jamesside,S037,Sherri Frazier,M,15,CRS001,Mathematics,T003,Katherine Moore,13.0,5,78
+84,SCH04,Robinson College,New Jamesside,S028,Julie Patterson,M,18,CRS005,English,T006,Curtis James,5.5,4,57
+85,SCH04,Robinson College,New Jamesside,S004,Sandra Miller,F,18,CRS004,Biology,T002,Joshua Booth,5.3,3,49
+86,SCH01,Fowler College,Lake Joshuabury,S008,Donna Mejia,F,16,CRS008,Art,T006,Curtis James,19.7,9,72
+87,SCH04,Robinson College,New Jamesside,S032,Michelle Hernandez,F,15,CRS008,Art,T006,Curtis James,17.1,1,60
+88,SCH04,Robinson College,New Jamesside,S033,Ernest Becker,F,17,CRS001,Mathematics,T003,Katherine Moore,11.9,11,54
+89,SCH02,Taylor High School,Lake Joyside,S018,Hailey Robinson,M,16,CRS002,Physics,T002,Joshua Booth,14.2,7,57
+90,SCH02,Taylor High School,Lake Joyside,S015,Cynthia Ferguson,M,14,CRS003,Chemistry,T002,Joshua Booth,14.1,12,56
+91,SCH02,Taylor High School,Lake Joyside,S038,Danny Dyer,F,16,CRS007,Computer Science,T006,Curtis James,17.3,1,78
+92,SCH04,Robinson College,New Jamesside,S032,Michelle Hernandez,F,15,CRS004,Biology,T002,Joshua Booth,16.3,11,54
+93,SCH04,Robinson College,New Jamesside,S006,Nicole Ward,F,15,CRS007,Computer Science,T006,Curtis James,10.8,0,47
+94,SCH01,Fowler College,Lake Joshuabury,S009,Tracie Wyatt,F,17,CRS008,Art,T006,Curtis James,3.3,2,38
+95,SCH02,Taylor High School,Lake Joyside,S015,Cynthia Ferguson,M,14,CRS007,Computer Science,T006,Curtis James,16.2,10,51
+96,SCH04,Robinson College,New Jamesside,S030,Wendy Taylor,F,18,CRS003,Chemistry,T002,Joshua Booth,7.0,12,35
+97,SCH04,Robinson College,New Jamesside,S028,Julie Patterson,M,18,CRS008,Art,T006,Curtis James,17.9,9,73
+98,SCH01,Fowler College,Lake Joshuabury,S003,Stephen Martinez,F,15,CRS004,Biology,T002,Joshua Booth,9.1,8,33
+99,SCH02,Taylor High School,Lake Joyside,S015,Cynthia Ferguson,M,14,CRS002,Physics,T002,Joshua Booth,9.5,2,58
+100,SCH02,Taylor High School,Lake Joyside,S026,Douglas Taylor,M,17,CRS007,Computer Science,T006,Curtis James,5.9,3,39
