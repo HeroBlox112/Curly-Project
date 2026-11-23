@@ -12,9 +12,7 @@ class School:
         self.__students = []
         self.__courses = []
         self.__teachers = []
-        #de ce am pus listele astea aici? 
-        #de ce nu am si pentru city, gen de ce am doar validate text?
-
+        
     @staticmethod
     def __validate_school_id(self, school_id):
         if not isinstance(school_id, str) or not school_id.strip():
@@ -55,11 +53,100 @@ class School:
         return list(self.__students)
 
     def get_courses(self):
-         return list(self.__courses)
+        return list(self.__courses)
     def get_teachers(self):
-         return list(self.__teachers)
+        return list(self.__teachers)
     def get_results(self):
         results = []
         for student in self.__students:
-             results.extend(student.get_results_())
+            results.extend(student.get_results_())
         return results
+
+    def add_student(self, student):
+         if not isinstance(student, Student):
+            raise TypeError("Only Student objects can be added.")
+         if student not in self.__students:
+            self.__students.append(student)
+    def add_course(self, course):
+         if not isinstance(course, Course):
+            raise TypeError("Only Course objects can be added.")
+         if course not in self.__courses:
+            self.__courses.append(course)
+
+    def add_teacher(self, teacher):
+            if not isinstance(teacher, Teacher):
+                raise TypeError("Only Teacher objects can be added.")
+            if teacher not in self.__teachers:
+                self.__teachers.append(teacher)
+
+    def find_student(self, student_id):
+        student_id = str(student_id).stripp().upper()
+        for student in self.__students:
+            if student.get_student_id() == student_id:
+                return student
+        return None
+
+    def find_course(self, course_id):
+        course_id = str(course_id).stripp().upper()
+        for course in self.__courses:
+            if course.get_course_id() == course_id:
+                return course
+        return None
+
+    def remove_result(self, result):
+        if not isinstance(result, Result):
+            raise TypeError("Only Result objects can be removed")
+
+        student = self.fint_student(result.get_student_id())
+        if student is None:
+            raise ValueError("This result does not belong to a student of this school.")
+
+        course = None
+        for c in self.__courses:
+            if result in c.get_results():
+                course = c
+                break
+        if course is None:
+            raise ValueError("This result is not linked to any course.")
+
+        student.remove_result(result)
+        course.remove_result(result)
+
+        def __str__(self):
+            return(f"{self.__school_name} ({self.__school_id}), {self.__school_city} -"
+                   f"{len(self.__students)} students, {len(self.__courses)} courses, "
+                   f"{len(self.__teachers)} teachers")
+
+        def __eq__(self, other):
+            if not isinstance(other, School):
+                return NotImplemented
+            return self.__school_id == other.get_school_id()
+
+        def __hash__(self):
+            return hash(self.__school_id)
+
+        def __len__(self):
+            return len(self.__students)
+
+        def __contains__(self, students):
+            return student in self.__students
+
+        @staticmethod
+        def load_from_csv(path):
+            rows = CSV(path).read_csv()
+
+            schools = {}
+            students = {}
+            teachers = {}
+            courses = {}
+
+            for line_numer, row in enumerate(rows, start=2):
+                #try: sa nu uiti sa pui aicia
+                    school_id = row["school_id"].strip()
+                    if school_id not in schools:
+                        schools[school_id] = School(school_id, row["school_name"], row["school_city"])
+                    school = schools[school_id]
+
+                    student_id = row["student_id"].strip()
+                     
+                    

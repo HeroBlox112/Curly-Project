@@ -17,4 +17,3 @@ class CSV:
         with open(self.path, mode="r", newline="") as file:
             return list(csv.DictReader(file))
 
-    
