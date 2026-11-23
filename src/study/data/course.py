@@ -20,4 +20,3 @@ class Course:
 
     def get_course_name(self):
         return self.course_name
-    #pula pula 
