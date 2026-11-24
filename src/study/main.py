@@ -1,70 +1,74 @@
 from pathlib import Path
 
-from study.data.csv import CSV
 from study.data.school import School
-from study.data.course import Course
 from study.data.result import Result
-from study.data.student import Student
-from study.data.teacher import Teacher
+
+CSV_PATH = str(Path(__file__).resolve().with_name("student_performance.csv"))
 
 def process():
-    # create the CSV
-    csv = CSV(str(Path(__file__).resolve().with_name("student_performance.csv")))
-
-    data = csv.read_csv()
-
-    schools = []
-    students = []
-    teachers = []
-    courses = []
-    results = []
-
-    for row in data:
-        # create new school
-        school = School(
-            row["school_id"],
-            row["school_name"],
-            row["school_city"]
-        )
-
-        schools.append(school)
-
-        # create new student
-        student = Student(
-            row["student_id"],
-            row["student_name"],
-            row["gender"],
-            int(row["age"])
-        )
-
-        students.append(student)
-
-        # create new teacher
-        teacher = Teacher(
-            row["teacher_id"],
-            row["teacher_name"]
-        )
-
-        teachers.append(teacher)
-
-        # create new course
-        course = Course(
-            row["course_id"],
-            row["course_name"]
-        )
-
-        courses.append(course)
-
-        # create new result
-        result = Result(
-            int(row["record_id"]),
-            row["student_id"],
-            float(row["study_hours_week"]),
-            int(row["absences"]),
-            float(row["final_grade"])
-        )
-
-        results.append(result)
+    try:
+        schools = School.load_from_csv(CSV_PATH)
+    except FileNotFoundError:
+        print("The CSV file was not found.")
+        return
+    except ValueError as error:
+        print(error)
+        return
 
     for school in schools:
-        print(f"School ID: {school.get_school_id()}, Name: {school.get_school_name()}, City: {school.get_school_city()}")
+        print(school)
+
+
+def next_record_id(schools):
+    ids = [r.get_record_id() for school in schools for r in school.get_results()]
+    return max(ids, default=0) + 1
+
+
+
+def add_new_result(schools):
+    student_id = input("Student ID: ").strip().upper()
+    school, student = None, None
+    for s in schools:
+        student = s.find_student(student_id)
+        if student is not None:
+            school = s
+            break
+    if student is None:
+        print("No student with this ID.")
+        return
+
+    course = school.find_course(input("Course ID: "))
+    if course is None:
+        print("This course does not exist in the student's school.")
+        return
+
+    try:
+        hours = float(input("Study hours per week: "))
+        absences = int(input("Absences: "))
+        grade = float(input("Final grade: "))
+        result = Result(next_record_id(schools), student.get_student_id(), hours, absences, grade)
+    except ValueError as error:
+        print(f"Invalid input: {error}")
+        return
+
+    student.add_result(result)
+    course.add_result(result)
+    print(f"Result added: {result}")
+
+
+def remove_existing_result(schools):
+    try:
+        record_id = int(input("Record ID to remove: "))
+    except ValueError:
+        print("Record ID must be a whole number.")
+        return
+
+    for school in schools:
+        for result in school.get_results():
+            if result.get_record_id() == record_id:
+                school.remove_result(result)
+                print(f"Result {record_id} removed.")
+                return
+    print("No result with this record ID.")
+
+    
