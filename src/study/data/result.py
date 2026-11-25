@@ -1,7 +1,7 @@
 class Result:
     def __init__(self, record_id, student_id, study_hours_week, absences, final_grade):
         self.record_id = self.validate_record_id(record_id)
-        self.student_id = student_id.validate_student_id(student_id)
+        self.student_id = student_id
         self.study_hours_week = self.validate_study_hours_week(study_hours_week)
         self.absences = self.validate_absences(absences)
         self.final_grade = self.validate_final_grade(final_grade)
